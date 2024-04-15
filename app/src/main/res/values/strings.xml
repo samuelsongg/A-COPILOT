@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GovComm</string>
+    <string name="service_description">This is a description of what my accessibility service does. Verify with Isaac if neccessary</string>
+</resources>

